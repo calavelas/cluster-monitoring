@@ -15,6 +15,3 @@ spec:
               name: http
         path: /
         pathType: Prefix
-  tls:
-  - hosts:
-    - grafana.calavelas.ddns.net

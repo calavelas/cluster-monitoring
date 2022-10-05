@@ -15,6 +15,3 @@ spec:
               name: web
         path: /
         pathType: Prefix
-  tls:
-  - hosts:
-    - alertmanager.calavelas.ddns.net
