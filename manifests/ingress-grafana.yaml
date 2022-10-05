@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   rules:
-  - host: grafana.calavelas.net
+  - host: grafana.calavelas.ddns.net
     http:
       paths:
       - backend:
@@ -17,4 +17,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - grafana.calavelas.net
+    - grafana.calavelas.ddns.net

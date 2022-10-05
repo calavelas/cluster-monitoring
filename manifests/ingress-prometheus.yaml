@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   rules:
-  - host: prometheus.calavelas.net
+  - host: prometheus.calavelas.ddns.net
     http:
       paths:
       - backend:
@@ -17,4 +17,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - prometheus.calavelas.net
+    - prometheus.calavelas.ddns.net

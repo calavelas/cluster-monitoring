@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   rules:
-  - host: alertmanager.calavelas.net
+  - host: alertmanager.calavelas.ddns.net
     http:
       paths:
       - backend:
@@ -17,4 +17,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - alertmanager.calavelas.net
+    - alertmanager.calavelas.ddns.net
