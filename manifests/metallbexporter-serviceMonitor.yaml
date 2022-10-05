@@ -2,13 +2,13 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    app: traefik
-  name: traefik
+    app: metallb
+  name: metallb
   namespace: monitoring
 spec:
   endpoints:
   - interval: 30s
-    port: metrics
+    port: http
     relabelings:
     - action: replace
       regex: (.*)
@@ -18,10 +18,10 @@ spec:
       targetLabel: instance
     scheme: http
     scrapeTimeout: 30s
-  jobLabel: traefik-exporter
+  jobLabel: metallb-exporter
   namespaceSelector:
     matchNames:
-    - kube-system
+    - metallb-system
   selector:
     matchLabels:
-      app: traefik
+      k8s-app: metallb-controller
