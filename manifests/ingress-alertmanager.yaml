@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: alertmanager-main
   namespace: monitoring
+  annotations:
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
   - host: alertmanager.10.1.0.160.nip.io
