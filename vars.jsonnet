@@ -53,7 +53,7 @@
   },
 
   // Domain suffix for the ingresses
-  suffixDomain: 'calavelas.ddns.net',
+  suffixDomain: 'calavelas.net',
   // Additional domain suffixes for the ingresses.
   // For example suffixDomain could be an external one and this a local domain.
   additionalDomains: ["10.1.0.151.nip.io"],
