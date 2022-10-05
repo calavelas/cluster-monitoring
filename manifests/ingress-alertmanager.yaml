@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   rules:
-  - host: alertmanager.192.168.1.15.nip.io
+  - host: alertmanager.calavelas.net
     http:
       paths:
       - backend:
@@ -17,4 +17,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - alertmanager.192.168.1.15.nip.io
+    - alertmanager.calavelas.net

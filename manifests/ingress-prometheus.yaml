@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   rules:
-  - host: prometheus.192.168.1.15.nip.io
+  - host: prometheus.calavelas.net
     http:
       paths:
       - backend:
@@ -17,4 +17,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - prometheus.192.168.1.15.nip.io
+    - prometheus.calavelas.net
