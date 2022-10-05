@@ -15,3 +15,13 @@ spec:
               name: http
         path: /
         pathType: Prefix
+  - host: grafana.10.1.0.151.nip.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: grafana
+            port:
+              name: http
+        path: /
+        pathType: Prefix
