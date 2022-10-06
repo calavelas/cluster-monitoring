@@ -24,7 +24,7 @@ $JSONNET_BIN -J vendor -m manifests "${1-example.jsonnet}" | xargs -I{} sh -c 'c
 # Clean-up json files from manifests dir
 find manifests -type f ! -name '*.yaml' -delete
 
-cp -r manifests/setup/* argocd-manifest/monitoring-setup
+cp -r manifests/setup/* argocd-manifest/setup
 cp -r manifests/alertmanager-* argocd-manifest/alertmanager
 cp -r manifests/armexporter-* argocd-manifest/armexporter
 cp -r manifests/grafana-* argocd-manifest/grafana
