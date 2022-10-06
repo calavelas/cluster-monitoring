@@ -56,7 +56,7 @@
   suffixDomain: '10.1.0.151.nip.io',
   // Additional domain suffixes for the ingresses.
   // For example suffixDomain could be an external one and this a local domain.
-  additionalDomains: ["10.1.0.151.nip.io"],
+  additionalDomains: [],
   // If TLSingress is true, a self-signed HTTPS ingress with redirect will be created
   TLSingress: false,
   // If UseProvidedCerts is true, provided files will be used on created HTTPS ingresses.
