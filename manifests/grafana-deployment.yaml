@@ -85,9 +85,6 @@ spec:
         - mountPath: /grafana-dashboard-definitions/0/namespace-by-workload
           name: grafana-dashboard-namespace-by-workload
           readOnly: false
-        - mountPath: /grafana-dashboard-definitions/0/nginx-dashboard
-          name: grafana-dashboard-nginx-dashboard
-          readOnly: false
         - mountPath: /grafana-dashboard-definitions/0/node-cluster-rsrc-use
           name: grafana-dashboard-node-cluster-rsrc-use
           readOnly: false
@@ -120,6 +117,9 @@ spec:
           readOnly: false
         - mountPath: /grafana-dashboard-definitions/0/statefulset
           name: grafana-dashboard-statefulset
+          readOnly: false
+        - mountPath: /grafana-dashboard-definitions/0/traefik-dashboard
+          name: grafana-dashboard-traefik-dashboard
           readOnly: false
         - mountPath: /grafana-dashboard-definitions/0/workload-total
           name: grafana-dashboard-workload-total
@@ -185,9 +185,6 @@ spec:
           name: grafana-dashboard-namespace-by-workload
         name: grafana-dashboard-namespace-by-workload
       - configMap:
-          name: grafana-dashboard-nginx-dashboard
-        name: grafana-dashboard-nginx-dashboard
-      - configMap:
           name: grafana-dashboard-node-cluster-rsrc-use
         name: grafana-dashboard-node-cluster-rsrc-use
       - configMap:
@@ -220,6 +217,9 @@ spec:
       - configMap:
           name: grafana-dashboard-statefulset
         name: grafana-dashboard-statefulset
+      - configMap:
+          name: grafana-dashboard-traefik-dashboard
+        name: grafana-dashboard-traefik-dashboard
       - configMap:
           name: grafana-dashboard-workload-total
         name: grafana-dashboard-workload-total

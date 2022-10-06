@@ -22,17 +22,17 @@
     },
     {
       name: 'metallbExporter',
-      enabled: true,
+      enabled: false,
       file: import 'modules/metallb.jsonnet',
     },
     {
       name: 'nginxExporter',
-      enabled: true,
+      enabled: false,
       file: import 'modules/nginx.jsonnet',
     },
     {
       name: 'traefikExporter',
-      enabled: false,
+      enabled: true,
       file: import 'modules/traefik.jsonnet',
     },
     {
