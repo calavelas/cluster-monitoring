@@ -23,3 +23,13 @@ mkdir -p manifests/setup
 $JSONNET_BIN -J vendor -m manifests "${1-example.jsonnet}" | xargs -I{} sh -c 'cat {} | $(go env GOPATH)/bin/gojsontoyaml > {}.yaml; rm -f {}' -- {}
 # Clean-up json files from manifests dir
 find manifests -type f ! -name '*.yaml' -delete
+
+cp -r manifests/setup/* argocd-manifest/monitoring-setup
+cp -r manifests/alertmanager-* argocd-manifest/alertmanager
+cp -r manifests/armexporter-* argocd-manifest/armexporter
+cp -r manifests/grafana-* argocd-manifest/grafana
+cp -r manifests/ingress-* argocd-manifest/ingress
+cp -r manifests/kube-state-metrics-* argocd-manifest/kube-state-metrics
+cp -r manifests/node-exporter-* argocd-manifest/node-exporter
+cp -r manifests/prometheus-* argocd-manifest/prometheus
+cp -r manifests/traefikexporter-* argocd-manifest/traefikexporter
