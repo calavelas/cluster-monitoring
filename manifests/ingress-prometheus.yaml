@@ -5,6 +5,16 @@ metadata:
   namespace: monitoring
 spec:
   rules:
+  - host: prometheus.calavelas.net
+    http:
+      paths:
+      - backend:
+          service:
+            name: prometheus-k8s
+            port:
+              name: web
+        path: /
+        pathType: Prefix
   - host: prometheus.10.1.0.151.nip.io
     http:
       paths:

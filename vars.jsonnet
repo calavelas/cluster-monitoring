@@ -49,14 +49,14 @@
 
   k3s: {
     enabled: true,
-    master_ip: ['calavelas.net'],
+    master_ip: ['10.1.0.151'],
   },
 
   // Domain suffix for the ingresses
-  suffixDomain: '10.1.0.151.nip.io',
+  suffixDomain: 'calavelas.net',
   // Additional domain suffixes for the ingresses.
   // For example suffixDomain could be an external one and this a local domain.
-  additionalDomains: [],
+  additionalDomains: ["10.1.0.151.nip.io"],
   // If TLSingress is true, a self-signed HTTPS ingress with redirect will be created
   TLSingress: false,
   // If UseProvidedCerts is true, provided files will be used on created HTTPS ingresses.

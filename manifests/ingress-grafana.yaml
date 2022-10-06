@@ -5,6 +5,16 @@ metadata:
   namespace: monitoring
 spec:
   rules:
+  - host: grafana.calavelas.net
+    http:
+      paths:
+      - backend:
+          service:
+            name: grafana
+            port:
+              name: http
+        path: /
+        pathType: Prefix
   - host: grafana.10.1.0.151.nip.io
     http:
       paths:

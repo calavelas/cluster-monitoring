@@ -5,6 +5,16 @@ metadata:
   namespace: monitoring
 spec:
   rules:
+  - host: alertmanager.calavelas.net
+    http:
+      paths:
+      - backend:
+          service:
+            name: alertmanager-main
+            port:
+              name: web
+        path: /
+        pathType: Prefix
   - host: alertmanager.10.1.0.151.nip.io
     http:
       paths:
