@@ -49,11 +49,11 @@
 
   k3s: {
     enabled: true,
-    master_ip: ['10.1.0.151'],
+    master_ip: ['calavelas.net'],
   },
 
   // Domain suffix for the ingresses
-  suffixDomain: '10.1.0.160.nip.io',
+  suffixDomain: '10.1.0.151.nip.io',
   // Additional domain suffixes for the ingresses.
   // For example suffixDomain could be an external one and this a local domain.
   additionalDomains: [],
